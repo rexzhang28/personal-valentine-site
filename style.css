@@ -178,6 +178,20 @@ h1{
   margin: 0 auto 8px;
 }
 
+/* Slightly smaller layout for the poem page to fit well on Mac screens */
+.poemCard{
+  width: min(600px, 88vw);
+  padding: 28px;
+}
+.poemCard .photo{
+  width: min(480px, 86vw);
+}
+
+@media (min-width: 1400px){
+  .poemCard{ width: 600px; }
+  .poemCard .photo{ width: 460px; }
+}
+
 /* poem page stats */
 .stats{
   display:flex;
